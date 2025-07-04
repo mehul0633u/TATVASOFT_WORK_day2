@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { DemoComponent } from './demo/demo.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormComponent } from "./form/form.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [DemoComponent, DirectivesComponent, HttpClientModule],
+  imports: [DemoComponent, DirectivesComponent, HttpClientModule, FormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

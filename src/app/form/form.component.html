@@ -1,0 +1,17 @@
+<div>
+    <h2>Form</h2>
+    <form>
+        Name: <input type="text" name="name" [(ngModel)]="name" />
+        <br />
+        Ennrollment No.: <input type="text" name="enrollmentNo" [(ngModel)]="enrollmentNo" />
+        <br />
+        Email: <input type="email" name="email" [(ngModel)]="email" />
+        <br />
+        @if(x){
+            <button (click)="OnClick()" >Login</button>
+        }
+        @else {
+            <button (click)="onClickl()" >Logout</button>
+        }
+    </form>
+</div>
